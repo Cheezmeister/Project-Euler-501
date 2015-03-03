@@ -1,0 +1,76 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1926,         66]
+NotebookOptionsPosition[      1608,         49]
+NotebookOutlinePosition[      1960,         65]
+CellTagsIndexPosition[      1917,         62]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"i", "=", "0"}], ";", 
+  RowBox[{"p", "=", "2"}], ";", 
+  RowBox[{"num", "=", "1000000000000"}], ";", 
+  RowBox[{
+   RowBox[{"While", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"p", "^", "7"}], "<", "num"}], ",", " ", 
+     RowBox[{
+      RowBox[{"i", "++"}], ";", 
+      RowBox[{"p", "=", 
+       RowBox[{"NextPrime", "[", "p", "]"}]}], ";"}]}], "]"}], 
+   RowBox[{"Print", "[", "i", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.631995178463687*^9, 3.631995199271214*^9}, {
+   3.631995240871666*^9, 3.63199527266776*^9}, 3.63207729595443*^9, {
+   3.6320775526429243`*^9, 3.632077617214837*^9}, {3.632080315946989*^9, 
+   3.6320803164167213`*^9}, {3.63208078199737*^9, 3.6320807824285793`*^9}, {
+   3.6320808839308023`*^9, 3.6320808857689247`*^9}}],
+
+Cell[BoxData["15"], "Print",
+ CellChangeTimes->{{3.631995249161128*^9, 3.631995278064064*^9}, {
+   3.6320776097892847`*^9, 3.6320776181062937`*^9}, 3.632080317700348*^9, 
+   3.632080783224738*^9, 3.6320808867017736`*^9}]
+}, Open  ]]
+},
+WindowSize->{960, 564},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 789, 19, 28, "Input"],
+Cell[1372, 43, 220, 3, 21, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

@@ -1,0 +1,121 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3947,        111]
+NotebookOptionsPosition[      3627,         94]
+NotebookOutlinePosition[      3979,        110]
+CellTagsIndexPosition[      3936,        107]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p", "=", "2"}], ";", 
+  RowBox[{"q", "=", "3"}], ";", 
+  RowBox[{"num", "=", "1000000000000"}], ";", 
+  RowBox[{"i", "=", "2"}], ";", 
+  RowBox[{"si", "=", "3"}], ";", 
+  RowBox[{"total", "=", "0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"PrimePi", "[", 
+      RowBox[{"num", "/", 
+       RowBox[{"(", 
+        RowBox[{"p", "*", "q"}], ")"}]}], "]"}], "-", "i"}], ">", "0"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"While", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"PrimePi", "[", 
+         RowBox[{"num", "/", 
+          RowBox[{"(", 
+           RowBox[{"p", "*", "q"}], ")"}]}], "]"}], "-", "i"}], ">", "0"}], 
+      ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"if", "[", 
+        RowBox[{
+         RowBox[{"p", "\[NotEqual]", "q"}], ",", 
+         RowBox[{"total", "+=", 
+          RowBox[{
+           RowBox[{"PrimePi", "[", 
+            RowBox[{"num", "/", 
+             RowBox[{"(", 
+              RowBox[{"p", "*", "q"}], ")"}]}], "]"}], "-", "i"}]}]}], "]"}], 
+       ";", "\[IndentingNewLine]", 
+       RowBox[{"q", "=", 
+        RowBox[{"NextPrime", "[", "q", "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"i", "++"}], ";"}]}], "]"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"p", "=", 
+     RowBox[{"NextPrime", "[", "p", "]"}]}], ";", 
+    RowBox[{"q", "=", 
+     RowBox[{"NextPrime", "[", "p", "]"}]}], ";", 
+    RowBox[{"i", "=", "si"}], ";", 
+    RowBox[{"si", "++"}], ";"}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", "total", "]"}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6320776565948057`*^9, 3.632077669477118*^9}, {
+  3.632078817402102*^9, 3.632078840185254*^9}, {3.632078931477231*^9, 
+  3.632079080066217*^9}, {3.632079127617714*^9, 3.632079154056336*^9}, {
+  3.632079540799486*^9, 3.6320795419737997`*^9}, {3.6320796745795403`*^9, 
+  3.632079717193199*^9}, {3.632079772752962*^9, 3.63207987632094*^9}, {
+  3.632079958477447*^9, 3.632080018809279*^9}, {3.632080056626028*^9, 
+  3.632080071352754*^9}, {3.632080104577723*^9, 3.6320801490306597`*^9}, {
+  3.6320801908305483`*^9, 3.6320802022949533`*^9}, {3.632080243094677*^9, 
+  3.6320803022181797`*^9}, {3.632080809974079*^9, 3.632080810452242*^9}, {
+  3.632080849044965*^9, 3.632080849595447*^9}, {3.632080899194708*^9, 
+  3.632080899913961*^9}}],
+
+Cell[BoxData["190614467420"], "Print",
+ CellChangeTimes->{{3.632079048240196*^9, 3.632079057187852*^9}, {
+   3.632079513458514*^9, 3.632079543278659*^9}, {3.6320796777289047`*^9, 
+   3.632079718302107*^9}, 3.632079840787966*^9, 3.632079876975657*^9, {
+   3.632079978056085*^9, 3.6320800194158907`*^9}, {3.6320800602395077`*^9, 
+   3.6320800719858837`*^9}, {3.6320801065744*^9, 3.6320801495656548`*^9}, {
+   3.632080193304216*^9, 3.6320802160501842`*^9}, {3.632080246353614*^9, 
+   3.63208030279949*^9}, 3.632080810924204*^9, 3.632080851095969*^9, 
+   3.632080954835599*^9, 3.63208336724172*^9, 3.632083422674602*^9}]
+}, Open  ]]
+},
+WindowSize->{960, 564},
+WindowMargins->{{Automatic, 0}, {Automatic, 1}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
+2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2412, 59, 148, "Input"],
+Cell[2995, 83, 616, 8, 21, "Print"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
